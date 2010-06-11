@@ -15,9 +15,11 @@
     .top_nav_wrapper
       .container_12
         .grid_12
+          = link_to_unless_current("home", "/")
+          |
           = link_to_unless_current("about", "/about")
           |
-          = link_to_unless_current("home", "/")
+          = link_to_unless_current("form", "/form")
       .clear
 
     .container_12

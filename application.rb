@@ -32,11 +32,26 @@ class SkeletonApp < Sinatra::Base
   end
 
   get '/' do
-    haml :index, :layout => 'layouts/default'.to_sym
+    haml :index, :layout => :'layouts/default'
   end
 
   get '/about' do
-    haml :about, :layout => 'layouts/default'.to_sym
+    haml :about, :layout => :'layouts/default'
+  end
+
+  get '/form' do
+    %{ <form action="/name" method="post">
+          <input name="person" type="text">
+          <input type="submit">
+       </form> }
+  end
+
+  post '/name' do
+    haml "Hello #{ params[:person] }", :layout => :'layouts/default'
+  end
+
+  get "/user/:id" do
+    "You're looking for user with id #{ params[:id] }"
   end
 end
 
