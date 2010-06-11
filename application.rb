@@ -11,6 +11,20 @@ class SkeletonApp < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :public, Proc.new { File.join(root, "public") }
 
+  helpers do
+    def link_to text, url=nil
+      haml "%a{:href => '#{ url || text }'} #{ text }"
+    end
+
+    def link_to_unless_current text, url=nil
+      if url == request.path_info
+        text
+      else
+        link_to text, url
+      end
+    end
+  end
+
   # SASS stylesheet
   get '/style.css' do
     headers 'Content-Type' => 'text/css; charset=utf-8'

@@ -15,9 +15,9 @@
     .top_nav_wrapper
       .container_12
         .grid_12
-          = link_to_unless_current("about", "/#{ @bevy.token }/about")
+          = link_to_unless_current("about", "/about")
           |
-          = link_to "home", "/"
+          = link_to_unless_current("home", "/")
       .clear
 
     .container_12

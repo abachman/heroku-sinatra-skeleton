@@ -8,7 +8,7 @@ require 'spec'
 
 World do
   Capybara.default_selector = :css
-  Capybara.app = IdeatorApp
+  Capybara.app = SkeletonApp
   include Capybara
   include Spec::Expectations
   include Spec::Matchers

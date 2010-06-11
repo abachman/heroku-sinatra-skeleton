@@ -10,22 +10,11 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /the home\s?page/
+    when /the home page/
       '/'
 
-    when /a bevy page/
-      "/#{ Bevy.first.token }"
-
-    when /the bevy page for "([^\"]*)"/
-      idea = Idea.first :name => $1
-      "/#{ idea.bevy.token }"
-
     when /the about page/
-      "/#{ Bevy.first.token }/about"
-
-    when /the edit page for "([^\"]*)"/
-      idea = Idea.first :name => $1
-      "/#{ idea.bevy.token }/idea/#{ idea.id }"
+      "/about"
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
