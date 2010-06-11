@@ -1,9 +1,8 @@
-A simple skeleton. Works with:
+A simple web app skeleton. Works with:
 
-    haml --version 3.0.2
+    haml --version 3.0.12
     sinatra --version 1.0
     dm-core --version 0.10.2
     data_objects --version 0.10.2
     do_postgres --version 0.10.2
-
 
