@@ -31,8 +31,7 @@ delete the whole folder.
 
 ## features/
 
-It's safe to ignore the features folder, that's testing. Feel free to delete it
-if you aren't interested in testing.
+It's safe to ignore the features folder since it's only concerned with testing.
 
 ## public/
 
