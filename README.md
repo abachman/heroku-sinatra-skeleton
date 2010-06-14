@@ -11,6 +11,9 @@ A simple web app skeleton. Works with:
     capybara --version 0.3.8
     rspec --version 1.3.0
 
+    # development only
+    thin --version 1.2.7
+
 Hosted at: [http://node-sinatra-example.heroku.com/](http://node-sinatra-example.heroku.com/)
 
 Source at: [http://github.com/abachman/heroku-sinatra-skeleton](http://github.com/abachman/heroku-sinatra-skeleton)
@@ -18,6 +21,15 @@ Source at: [http://github.com/abachman/heroku-sinatra-skeleton](http://github.co
 This is *not* the simplest possible sinatra app. I left enough loose threads
 dangling that getting moderately complex sinatra apps up to speed quickly won't
 be difficult.
+
+To run the application locally, make sure thin is installed (`gem install
+thin`), `cd` into the working directory and run the following command:
+
+    $ thin start -R config.ru
+
+The application should startup at http://0.0.0.0:3000. You can refer to [thin's
+documentation](http://code.macournoyer.com/thin/usage/) for more configuration
+options.
 
 # Folders
 
