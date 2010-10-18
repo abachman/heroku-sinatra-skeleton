@@ -1,0 +1,26 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.2)
+    data_objects (0.10.2)
+      addressable (~> 2.1)
+    dm-core (0.10.2)
+      addressable (~> 2.1)
+      extlib (~> 0.9.14)
+    do_postgres (0.10.2)
+      data_objects (= 0.10.2)
+    extlib (0.9.15)
+    haml (3.0.12)
+    rack (1.2.1)
+    sinatra (1.0)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  data_objects (= 0.10.2)
+  dm-core (= 0.10.2)
+  do_postgres (= 0.10.2)
+  haml (= 3.0.12)
+  sinatra (= 1.0)
