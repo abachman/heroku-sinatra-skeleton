@@ -30,4 +30,4 @@ DEPENDENCIES
   do_postgres (= 0.10.2)
   haml (= 3.0.12)
   sinatra (= 1.0)
-  thin
+  thin (= 1.2.7)

@@ -1,18 +1,5 @@
-A simple web app skeleton. Works with:
-
-    haml --version 3.0.12
-    sinatra --version 1.0
-    dm-core --version 0.10.2
-    data_objects --version 0.10.2
-    do_postgres --version 0.10.2
-
-    # test only
-    cucumber --version 0.7.2
-    capybara --version 0.3.8
-    rspec --version 1.3.0
-
-    # development only
-    thin --version 1.2.7
+A simple web app skeleton. Uses bundler for dependencies. `bundle install` gets
+all.
 
 Hosted at: [http://node-sinatra-example.heroku.com/](http://node-sinatra-example.heroku.com/)
 
@@ -25,7 +12,7 @@ be difficult.
 To run the application locally, make sure thin is installed (`gem install
 thin`), `cd` into the working directory and run the following command:
 
-    $ thin start -R config.ru
+    $ bundle exec thin start
 
 The application should startup at http://0.0.0.0:3000. You can refer to [thin's
 documentation](http://code.macournoyer.com/thin/usage/) for more configuration
@@ -40,10 +27,6 @@ installed and active on your personal machine for it to run locally.
 
 Because this is a skeleton for me, I want it, if you don't want it, you can safely
 delete the whole folder.
-
-## features/
-
-It's safe to ignore the features folder since it's only concerned with testing.
 
 ## public/
 
@@ -119,3 +102,6 @@ To add params to paths, use `:whatever` in the url string:
 ---
 
 That should be enough to get you started.
+
+No tests. Could not, in the two hours I had, get a simple install of cucumber
+and rspec to play nicely. I suggest following [the Sinatra testing guidelines](http://www.sinatrarb.com/testing.html).

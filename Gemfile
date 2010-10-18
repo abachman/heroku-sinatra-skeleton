@@ -6,5 +6,5 @@ gem "data_objects", "= 0.10.2"
 gem "do_postgres", "= 0.10.2"
 
 group :development do
-  gem 'thin'
+  gem 'thin', "= 1.2.7"
 end

@@ -1,3 +1,6 @@
+require "rubygems"
+require "bundler/setup"
+
 namespace :db do
   require 'config/database'
 
